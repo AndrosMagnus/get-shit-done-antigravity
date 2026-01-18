@@ -1,0 +1,1872 @@
+﻿
+
+
+
+
+
+
+
+
+<!doctype html>
+<html 
+      lang="en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com"><meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award https://www.googleapis.com/auth/devprofiles.full_control.firstparty"><meta property="og:site_name" content="Google Codelabs">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#1a73e8"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/codelabs/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined&display=block"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/images/touchicon-180.png"><link rel="canonical" href="https://codelabs.developers.google.com/getting-started-google-antigravity"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Codelabs" href="https://codelabs.developers.google.com/s/opensearch.xml">
+      <link rel="alternate" hreflang="en"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity" /><link rel="alternate" hreflang="x-default" href="https://codelabs.developers.google.com/getting-started-google-antigravity" /><link rel="alternate" hreflang="ar"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=zh-cn" /><link rel="alternate" hreflang="zh-Hant"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=zh-tw" /><link rel="alternate" hreflang="fa"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=fa" /><link rel="alternate" hreflang="fr"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=fr" /><link rel="alternate" hreflang="de"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=de" /><link rel="alternate" hreflang="he"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=pt-br" /><link rel="alternate" hreflang="ru"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=ru" /><link rel="alternate" hreflang="es-419"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=vi" /><title>Getting Started with Google Antigravity &nbsp;|&nbsp; Google Codelabs</title>
+
+<meta property="og:title" content="Getting Started with Google Antigravity &nbsp;|&nbsp; Google Codelabs"><meta name="description" content="This codelab guides you through the process of installing and experiencing the features of Google Antigravity, an Agent-first development platform.">
+  <meta property="og:description" content="This codelab guides you through the process of installing and experiencing the features of Google Antigravity, an Agent-first development platform."><meta property="og:url" content="https://codelabs.developers.google.com/getting-started-google-antigravity"><meta property="og:locale" content="en">
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class="color-scheme--light"
+        template="codelab"
+        theme="codelabs-theme"
+        type="codelab"
+        
+        
+        
+        layout="docs"
+        
+        
+        
+        
+        
+        display-toc
+        pending>
+  
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+  
+    <a href="#main-content" class="skip-link button">
+      
+      Skip to main content
+    </a>
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner" data-nosnippet>
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        
+<div class="devsite-product-name-wrapper">
+
+  <a href="/" class="devsite-site-logo-link gc-analytics-event"
+   data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav"
+   track-name="googleCodelabs" track-metadata-position="nav"
+   track-metadata-eventDetail="nav">
+  
+  <picture>
+    
+    <img src="https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/images/lockup.svg" class="devsite-site-logo" alt="Google Codelabs">
+  </picture>
+  
+</a>
+
+
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    enable-search-summaries
+    
+    tenant-name="Google Codelabs"
+    
+    
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://codelabs.developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="Open search"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="Search"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="Search"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+              <svg class="devsite-search-ai-image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6641_386)">
+                    <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14167 15.375 4.875 14.125C3.625 12.8583 3 11.3167 3 9.5C3 7.68333 3.625 6.15 4.875 4.9C6.14167 3.63333 7.68333 3 9.5 3C10.0167 3 10.5167 3.05833 11 3.175C11.4833 3.275 11.9417 3.43333 12.375 3.65L10.825 5.2C10.6083 5.13333 10.3917 5.08333 10.175 5.05C9.95833 5.01667 9.73333 5 9.5 5C8.25 5 7.18333 5.44167 6.3 6.325C5.43333 7.19167 5 8.25 5 9.5C5 10.75 5.43333 11.8167 6.3 12.7C7.18333 13.5667 8.25 14 9.5 14C10.6667 14 11.6667 13.625 12.5 12.875C13.35 12.1083 13.8417 11.15 13.975 10H15.975C15.925 10.6333 15.7833 11.2333 15.55 11.8C15.3333 12.3667 15.05 12.8667 14.7 13.3L21 19.6L19.6 21ZM17.5 12C17.5 10.4667 16.9667 9.16667 15.9 8.1C14.8333 7.03333 13.5333 6.5 12 6.5C13.5333 6.5 14.8333 5.96667 15.9 4.9C16.9667 3.83333 17.5 2.53333 17.5 0.999999C17.5 2.53333 18.0333 3.83333 19.1 4.9C20.1667 5.96667 21.4667 6.5 23 6.5C21.4667 6.5 20.1667 7.03333 19.1 8.1C18.0333 9.16667 17.5 10.4667 17.5 12Z" fill="#5F6368"/>
+                  </g>
+                <defs>
+                <clipPath id="clip0_6641_386">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            
+          </div>
+          <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+            <kbd class="devsite-search-shortcut-icon">/</kbd>
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="Close search"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+          
+
+          
+
+          
+
+          
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+          
+
+        
+
+        
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                          fp-auth
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Sign in</span>
+            
+          </devsite-user>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars hidden>
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     hidden>
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="Filter"
+         
+         aria-label="Type to filter"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="Clear filter"
+        aria-label="Clear filter"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="Side menu">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  <a href="/" class="devsite-site-logo-link gc-analytics-event"
+   data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav"
+   track-name="googleCodelabs" track-metadata-position="nav"
+   track-metadata-eventDetail="nav">
+  
+  <picture>
+    
+    <img src="https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/images/lockup.svg" class="devsite-site-logo" alt="Google Codelabs">
+  </picture>
+  
+</a>
+
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+          
+          
+        </ul>
+      
+    </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" id="main-content" class="devsite-main-content"
+            
+              
+              has-sidebar
+            >
+          <div class="devsite-sidebar">
+            <div class="devsite-sidebar-content">
+                
+                <devsite-toc class="devsite-nav"
+                            role="navigation"
+                            aria-label="On this page"
+                            depth="1"
+                            scrollbars
+                  ></devsite-toc>
+                <devsite-recommendations-sidebar class="nocontent devsite-nav">
+                </devsite-recommendations-sidebar>
+            </div>
+          </div>
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article"><style>
+      body {
+        transition: opacity ease-in 0.2s;
+      }
+
+      body[unresolved] {
+        opacity: 0;
+        display: block;
+        overflow: hidden;
+        position: relative;
+      }
+      </style>
+  
+  
+  
+  
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+</ul>
+    
+  </div>
+  
+    <h1 class="devsite-page-title" tabindex="-1">
+      Getting Started with Google Antigravity<devsite-actions hidden data-nosnippet></devsite-actions>
+  
+      
+    </h1>
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="1"
+    devsite-toc-embedded
+    >
+  </devsite-toc>
+  
+    
+  <div class="devsite-article-body clearfix
+  ">
+
+  
+    
+    
+    <google-codelab-analytics gaid="UA-49880327-14" ga4id="G-JTFZSJVVVZ"></google-codelab-analytics>
+    <google-codelab codelab-gaid="UA-52746336-1"
+                    codelab-ga4id=""
+                    doc-id="1CJOAcG3Ysek-WUd4xBBZoLM-lAcP_3cKop94HdccqGQ"
+                    id="getting-started-google-antigravity"
+                    title="Getting Started with Google Antigravity"
+                    no-tooltip=""
+                    environment="web"
+                    category="antigravity,googleantigravity,agenticai,developertools"
+                    feedback-link="https://github.com/googlecodelabs/feedback/issues/new?title=[getting-started-google-antigravity]&amp;labels=antigravity&amp;assignees=rominirani,meteatamel"
+                    layout="paginated"
+                    >
+      
+        <google-codelab-step label="Introduction" duration="5" step="0">
+          
+            <google-codelab-about codelab-title="Getting Started with Google Antigravity"
+                                  authors="Romin Irani &amp; Mete Atamel"
+                                  last-updated="2026-01-16T04:20:40Z"
+                                  duration="107">
+            </google-codelab-about>
+          
+          <h2 class="step-title" id="0" data-text="Introduction" tabindex="-1">
+              1. Introduction
+          </h2>
+          <p>In this codelab, you will learn about  <a href="https://antigravity.google/" target="_blank">Google Antigravity</a> (referred as Antigravity for the rest of the document), an agentic development platform, evolving the IDE into the agent-first era.</p>
+<p>Unlike standard coding assistants that just autocomplete lines, Antigravity provides a &#34;Mission Control&#34; for managing autonomous agents that can plan, code, and even browse the web to help you build.</p>
+<p>Antigravity is designed as an agent-first platform. It presupposes that the AI is not just a tool for writing code but an autonomous actor capable of planning, executing, validating, and iterating on complex engineering tasks with minimal human intervention.</p>
+<h3 class="checklist" is-upgraded id="what-youll-learn" data-text="What you'll learn" tabindex="-1"><strong>What you'll learn</strong></h3>
+<ul class="checklist">
+<li>Installing and configuring Antigravity.</li>
+<li>Exploring key concepts of Antigravity like Agent Manager, Editor, Browser and more.</li>
+<li>Customizing Antigravity with your own rules and workflow, along with security considerations.</li>
+</ul>
+<h3 is-upgraded id="what-youll-need" data-text="What you'll need" tabindex="-1"><strong>What you'll need</strong></h3>
+<p>Currently Antigravity is available as a preview for personal Gmail accounts. It comes with a free quota to use premier models.</p>
+<p>Antigravity needs to be locally installed on your system. The product is available on Mac, Windows and specific Linux distributions. In addition to your own machine, you would need the following:</p>
+<ul>
+<li>Chrome web browser</li>
+<li>A Gmail account (Personal Gmail account).</li>
+</ul>
+<p>This codelab, designed for users and developers of all levels (including beginners).</p>
+<aside class="special"><p><strong>For Google Cloud Credits:</strong> To help you use Antigravity with Google Cloud projects, redeem your free Google Cloud credits using this  <a href="https://goo.gle/codelab-getting-started-google-antigravity-credits" target="_blank">link</a>. You can follow the instructions  <a href="https://codelabs.developers.google.com/codelabs/cloud-codelab-credits" target="_blank">here</a> to activate the credit and create a new project.</p>
+</aside>
+<h3 is-upgraded id="reporting-issues" data-text="Reporting issues" tabindex="-1"><strong>Reporting issues</strong></h3>
+<p>As you work through the codelab and with Antigravity, you might encounter problems.</p>
+<p>For codelab related issues (typos, wrong instructions), please open a bug with <code translate="no" dir="ltr">Report a mistake</code> button in bottom left corner of this codelab:</p>
+<p class="image-container"><img alt="b06b582bcd847f6d.png" style="width: 149.00px" src="/static/getting-started-google-antigravity/img/b06b582bcd847f6d.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b06b582bcd847f6d_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>For bugs or feature requests related to Antigravity, please report the issue within Antigravity. You can do this in Agent Manager with the <code translate="no" dir="ltr">Provide Feedback</code> link in the bottom left corner:</p>
+<p class="image-container"><img alt="281ac826fb44d427.png" style="width: 254.00px" src="/static/getting-started-google-antigravity/img/281ac826fb44d427.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/281ac826fb44d427_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>You can also go to the editor with the <code translate="no" dir="ltr">Report Issue</code> link under your profile icon:</p>
+<p class="image-container"><img alt="e8afd782a8f92129.png" style="width: 239.00px" src="/static/getting-started-google-antigravity/img/e8afd782a8f92129.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e8afd782a8f92129_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Installation" duration="10" step="1">
+          
+          <h2 class="step-title" id="1" data-text="Installation" tabindex="-1">
+              2. Installation
+          </h2>
+          <p>We will begin with installing Antigravity. Currently the product is available for preview and you can use your personal Gmail account to get started with it.</p>
+<p>Go to the  <a href="https://antigravity.google/download" target="_blank">downloads</a> page and click on the appropriate operating system version that is applicable to your case. Launch the application installer and install the same on your machine. Once you have completed the installation, launch the Antigravity application. You should see a screen similar to the following:</p>
+<p class="image-container"><img alt="29fada39721093c.png" style="width: 290.17px" src="/static/getting-started-google-antigravity/img/29fada39721093c.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/29fada39721093c_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Please proceed with clicking on <code translate="no" dir="ltr">Next</code> each time. Key steps are detailed below:</p>
+<ul>
+<li><strong>Choose setup flow:</strong> This brings up the option for you to import from your existing VS Code or Cursor settings. We will go with a fresh start.</li>
+<li><strong>Choose an Editor theme type</strong>: We will go with the dark theme but it&#39;s entirely up to you.</li>
+<li><strong>How do you want to use the Antigravity agent?</strong></li>
+</ul>
+<p class="image-container"><img alt="7ca55560ec377130.png" style="width: 470.50px" src="/static/getting-started-google-antigravity/img/7ca55560ec377130.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7ca55560ec377130_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Let&#39;s understand this in a bit more detail. Remember that settings can be changed at any time via Antigravity User Settings (<code translate="no" dir="ltr">Cmd + ,</code>).</p>
+<p>Before we delve into the options, let us look at some specific properties (which you see to the right of the dialog).</p>
+<h3 is-upgraded id="terminal-execution-policy" data-text="Terminal Execution policy" tabindex="-1">Terminal Execution policy</h3>
+<p>This is about giving the Agent the ability to execute commands (applications/tools) in your terminal:</p>
+<ul>
+<li><strong>Always proceed:</strong> Always auto-execute terminal commands (except those in a configurable deny list).</li>
+<li><strong>Request review:</strong> Request user review and approval before executing terminal commands.</li>
+</ul>
+<h3 is-upgraded id="review-policy" data-text="Review policy" tabindex="-1">Review policy</h3>
+<p>As the Agent goes about its task, it creates various artifacts (task plan, implementation plan, etc). The review policy is set such that you can determine who decides if it needs to be reviewed. Should you always want to review it, or let the agent decide on this. Accordingly, there are three options here too.</p>
+<ul>
+<li><strong>Always Proceed:</strong> Agent never asks for review.</li>
+<li><strong>Agent Decides:</strong> Agent will decide when to ask for review.</li>
+<li><strong>Request Review:</strong> Agent always asks for review.</li>
+</ul>
+<h3 is-upgraded id="javascript-execution-policy" data-text="JavaScript Execution policy" tabindex="-1">JavaScript Execution policy</h3>
+<p>When enabled, the agent can use browser tools to open URLs, read web pages, and interact with browser content. This policy controls how JavaScript is executed in the browser.</p>
+<ul>
+<li><strong>Always Proceed:</strong> Agent will not stop to ask for permission to run Javascript in the browser. This provides the Agent with maximum autonomy to perform complex actions and validation in the browser, but also has the highest exposure to security exploits.</li>
+<li><strong>Request review:</strong> Agent will always stop to ask for permission to run Javascript code in the browser.</li>
+<li><strong>Disabled:</strong> Agent will never run Javascript code in the browser.</li>
+</ul>
+<p>Now that we have understood different policies, the 4 options on the left are nothing but specific settings for the terminal execution, review, and JavaScript execution policies for 3 of them and a 4th option available where we can completely custom control it. These 4 options are available so that we can choose how much autonomy you want to give to the Agent to execute commands in the terminal and get artifacts reviewed before moving ahead with the task.</p>
+<p>These 4 options are:</p>
+<ul>
+<li><strong>Secure mode</strong>: Secure Mode provides enhanced security controls for the Agent, allowing you to restrict its access to external resources and sensitive operations. When Secure Mode is enabled, several security measures are enforced to protect your environment.</li>
+<li><strong>Review-driven development (recommended)</strong>: The agent will frequently ask for review.</li>
+<li><strong>Agent-driven development</strong>: The agent will never ask for review.</li>
+<li><strong>Custom configuration</strong></li>
+</ul>
+<p>The <strong>Review-driven development</strong> option is a good balance and the recommended one since it allows the agent to make a decision and come back to the user for approval.</p>
+<p>Next is the <strong>Configure your Editor</strong> settings page where you can choose your preferences for the following:</p>
+<ul>
+<li>Keybindings: Configure your keybindings.</li>
+<li>Extensions: Install popular language and other recommended extensions.</li>
+<li>Command Line: Install the command line tool to open Antigravity with <code translate="no" dir="ltr">agy</code>.</li>
+</ul>
+<p>Now, you&#39;re ready to <strong>Sign in to Google.</strong> As mentioned earlier, Antigravity is available in preview mode and free if you have a personal Gmail account. <strong>Sign in now with your account.</strong> This will open up the browser allowing you to sign in. On successful authentication, you will see a message similar to the one below and it will lead you back to the Antigravity application. Go with the flow.</p>
+<p>Finally, <strong>Terms of Use</strong>. You can make a decision if you&#39;d like to opt-in or not and then click on <code translate="no" dir="ltr">Next</code>.</p>
+<p>This will lead you to the moment of truth, where Antigravity will be waiting to collaborate with you.</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Agent Manager" duration="20" step="2">
+          
+          <h2 class="step-title" id="2" data-text="Agent Manager" tabindex="-1">
+              3. Agent Manager
+          </h2>
+          <p>We are ready to get started!</p>
+<p>Antigravity forks the open-source Visual Studio Code (VS Code) foundation but radically alters the user experience to prioritize agent management over text editing. The interface is bifurcated into two distinct primary windows: the <code translate="no" dir="ltr">Editor</code> and the <code translate="no" dir="ltr">Agent Manager</code>. This separation of concerns mirrors the distinction between individual contribution and engineering management.</p>
+<h2 is-upgraded id="agent-manager:-mission-control" data-text="Agent Manager: Mission Control" tabindex="-1">Agent Manager: Mission Control</h2>
+<p>Upon launching Antigravity, the user is typically greeted not by a file tree, but by the Agent Manager, as shown below:</p>
+<p class="image-container"><img alt="d5ae91fc746e1bba.png" style="width: 624.00px" src="/static/getting-started-google-antigravity/img/d5ae91fc746e1bba.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d5ae91fc746e1bba_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>This interface acts as a <code translate="no" dir="ltr">Mission Control</code> dashboard. It is designed for high-level orchestration, allowing developers to spawn, monitor, and interact with multiple agents operating asynchronously across different workspaces or tasks.</p>
+<p>In this view, the developer acts as an architect. They define high-level objectives, examples could be:</p>
+<ul>
+<li>Refactor the authentication module</li>
+<li>Update the dependency tree</li>
+<li>Generate a test suite for the billing API</li>
+</ul>
+<p>As the diagram above indicates, each of these requests spawns a dedicated agent instance. The UI provides a visualization of these parallel work streams, displaying the status of each agent, the <strong>Artifacts</strong> they have produced (plans, results, diffs), and any pending requests for human approval.</p>
+<p>This architecture addresses a key limitation of previous IDEs that had more of a chatbot experience, which were linear and synchronous. In a traditional chat interface, the developer must wait for the AI to finish generating code before asking the next question. In Antigravity&#39;s Manager View, a developer can dispatch five different agents to work on five different bugs simultaneously, effectively multiplying their throughput.</p>
+<p>If you click on <code translate="no" dir="ltr">Next</code> above, you have the option to open a workspace.</p>
+<p class="image-container"><img alt="ec72712ea24bf6d5.png" style="width: 369.50px" src="/static/getting-started-google-antigravity/img/ec72712ea24bf6d5.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ec72712ea24bf6d5_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Think of workspace as you knew from VS Code and you will be done. So we can open up a local folder by clicking on the button and then selecting a folder to start with. In my case, I had a folder in my home folder named <code translate="no" dir="ltr">my-agy-projects</code> and I selected that. You can use a completely different folder. Note, you can completely skip this step if you&#39;d like and you can open up a workspace at any time later too.</p>
+<p>Once you complete this step, you will be in the Agent Manager window, which is shown below:</p>
+<p class="image-container"><img alt="156224e223eeda36.png" style="width: 536.50px" src="/static/getting-started-google-antigravity/img/156224e223eeda36.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/156224e223eeda36_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>You will notice that the application is immediately geared to start a new conversation in the workspace folder (<code translate="no" dir="ltr">my-agy-projects</code>) that was selected. You can use your existing knowledge of working with other AI applications (Cursor, Gemini CLI) and use <code translate="no" dir="ltr">@</code> and other ways to include additional context while prompting.</p>
+<p>Do look at both the <code translate="no" dir="ltr">Planning</code> and the <code translate="no" dir="ltr">Model Selection</code> dropdowns. The Model Selection dropdown allows you to choose from one of the models available at the moment, for your Agent to use. The list is shown below:</p>
+<p class="image-container"><img alt="fb0744dc43911365.png" style="width: 336.12px" src="/static/getting-started-google-antigravity/img/fb0744dc43911365.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/fb0744dc43911365_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Similarly, we find that the Agent is going to be in a default <code translate="no" dir="ltr">Planning</code> mode. But we can also go for the <code translate="no" dir="ltr">Fast</code> mode.</p>
+<p class="image-container"><img alt="f403e40ad480efc9.png" style="width: 359.50px" src="/static/getting-started-google-antigravity/img/f403e40ad480efc9.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f403e40ad480efc9_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Let&#39;s look at what the  <a href="https://antigravity.google/docs/agent-modes-settings" target="_blank">documentation</a> says on this:</p>
+<ul>
+<li><code translate="no" dir="ltr">Planning</code>: An Agent can plan before executing tasks. Use for deep research, complex tasks, or collaborative work. In this mode, the Agent organizes its work in task groups, produces Artifacts, and takes other steps to thoroughly research, think through, and plan its work for optimal quality. You will see a lot more output here.</li>
+<li><code translate="no" dir="ltr">Fast</code>: An Agent will execute tasks directly. Use for simple tasks that can be completed faster, such as renaming variables, kicking off a few bash commands, or other smaller, localized tasks. This is helpful for when speed is an important factor, and the task is simple enough that there is low worry of worse quality.</li>
+</ul>
+<p>If you are familiar with the thinking budget and similar terms in agents, think of this as the ability to control the thinking of the agent, thereby having a direct impact on the thinking budget. We will go with the defaults for now but do remember that at the time of the launch, Gemini 3 Pro model availability is as per limited quotas to everyone, so do expect appropriate messages indicating if you have exhausted those free quotas for Gemini 3 usage.</p>
+<p>Let&#39;s spend a bit of time now on the Agent Manager (window) here and understand a few things, so that it&#39;s clear about the basic building blocks, how you navigate in Antigravity and more. The Agent Manager window is produced below:</p>
+<p class="image-container"><img alt="22f6dcf7b3edc583.png" style="width: 528.50px" src="/static/getting-started-google-antigravity/img/22f6dcf7b3edc583.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/22f6dcf7b3edc583_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Please refer to the above diagram with the numbers:</p>
+<ol type="1">
+<li><code translate="no" dir="ltr">Inbox</code>: Think of this as a way to track all your conversations in one place. As you send Agents off on their tasks, these will appear in the Inbox and you can click on the Inbox to get a list of all the current conversations. Tapping on any of the conversations will lead you to all the messages that have been exchanged, status of the tasks, what the Agent has produced or even if it is waiting for an approval from your side on the tasks. This is a great way to come back later to a previous task that you were working on. A very handy feature.</li>
+<li><code translate="no" dir="ltr">Start Conversation</code>: Click on this to begin a new conversation. This will directly lead you to the input where it says <code translate="no" dir="ltr">Ask anything</code>.</li>
+<li><code translate="no" dir="ltr">Workspaces</code>: We mentioned about Workspaces and that you can work across any workspace that you want. You can add more workspaces at any time and can select any workspace while starting the conversation.</li>
+<li><code translate="no" dir="ltr">Playground</code>: This is a great way by which you can simply start a conversation with the agent and then if you&#39;d like to convert that into a workspace, where you have stricter control over the files, etc. Think of this as a scratch area.</li>
+<li><code translate="no" dir="ltr">Editor View</code>: So far we are in the Agent Manager view. You can switch at any time to the Editor view, if you&#39;d like. This will show you your workspace folder and any files generated. You can directly edit the files there, or even provide inline guidance, command in the editor, so that the Agent can do something or change as per your modified recommendations/instructions. We will cover the Editor View in detail in a later section.</li>
+<li><code translate="no" dir="ltr">Browser</code>: Finally, we come to one of the clear differentiators that makes Antigravity very powerful and that is its close integration with the Chrome browser.  Let&#39;s get going with setting up the browser in the next section.</li>
+</ol>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Antigravity Browser" duration="10" step="3">
+          
+          <h2 class="step-title" id="3" data-text="Antigravity Browser" tabindex="-1">
+              4. Antigravity Browser
+          </h2>
+          <p>As per the  <a href="https://antigravity.google/docs/browser-subagent" target="_blank">documentation</a>, when the agent wants to interact with the browser, it invokes a browser subagent to handle the task at hand. The browser subagent runs a model specialized to operate on the pages that are open within the Antigravity-managed browser, which is different from the model you selected for the main agent.</p>
+<p>This subagent has access to a variety of tools that are necessary to control your browser, including clicking, scrolling, typing, reading console logs, and more. It can also read your open pages through DOM capture, screenshots, or markdown parsing, as well as taking videos.</p>
+<p>This means that we need to launch and install the Antigravity browser extension. Let&#39;s do that by actually starting a conversation in the Playground and going through the steps.</p>
+<p>Select <code translate="no" dir="ltr">Playground</code> and give the following task <code translate="no" dir="ltr">go to antigravity.google</code> to the Agent as shown below:</p>
+<p class="image-container"><img alt="51a373d3da23db56.png" style="width: 439.50px" src="/static/getting-started-google-antigravity/img/51a373d3da23db56.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/51a373d3da23db56_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p><strong>Submit the task</strong>. You will see the agent analyzing the task and you can inspect the thought process. At some point, it will correctly proceed and mention that it needs to set up the browser agent as shown below. Click on <code translate="no" dir="ltr">Setup</code>.</p>
+<p class="image-container"><img alt="e7119f40e093afd2.png" style="width: 441.50px" src="/static/getting-started-google-antigravity/img/e7119f40e093afd2.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e7119f40e093afd2_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>This will bring up the browser and display a message to install the extension as shown below:</p>
+<p class="image-container"><img alt="82fb87d7d75b4a6c.png" style="width: 306.67px" src="/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/82fb87d7d75b4a6c_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Go ahead and you will be led to the Chrome Extension that you can then install.</p>
+<p class="image-container"><img alt="f3468f0e5f3bb075.png" style="width: 624.00px" src="/static/getting-started-google-antigravity/img/f3468f0e5f3bb075.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/f3468f0e5f3bb075_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Once you successfully install the extension, Antigravity Agent will get to work and indicate that it is expecting you to allow it permission to do its task. You should see some activity in the browser window that has been opened:</p>
+<p class="image-container"><img alt="7f0367e00ac36d5a.png" style="width: 430.75px" src="/static/getting-started-google-antigravity/img/7f0367e00ac36d5a.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7f0367e00ac36d5a_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Switch back the Agent Manager view and you should see the following:</p>
+<p class="image-container"><img alt="b9d89e1ebefcfd76.png" style="width: 624.00px" src="/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b9d89e1ebefcfd76_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>This is exactly what we expected to happen since we asked the Agent to go and visit the <code translate="no" dir="ltr">antigravity.google</code> website. Give it the permission and you will find that the website was safely navigated to, as shown below:</p>
+<p class="image-container"><img alt="77fcc38b5fb4ca7c.png" style="width: 361.16px" src="/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/77fcc38b5fb4ca7c_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Artifacts" duration="5" step="4">
+          
+          <h2 class="step-title" id="4" data-text="Artifacts" tabindex="-1">
+              5. Artifacts
+          </h2>
+          <p>Antigravity creates <strong>Artifacts</strong> as it plans and gets its work done as a way to communicate its work and get feedback from the human user. These are rich markdown files, architecture diagrams, images, browser recordings, code diffs, and so on.</p>
+<p>Artifacts solve the <strong>&#34;Trust Gap&#34;.</strong> When an agent claims, <strong>&#34;I have fixed the bug&#34;</strong> the developer previously had to read the code to verify. In Antigravity, the agent produces an artifact to prove it.</p>
+<p>These are the main artifacts produced by Antigravity:</p>
+<ul>
+<li><code translate="no" dir="ltr">Task Lists</code>: Before writing code, the agent generates a structured plan. You don&#39;t typically need to edit this plan but you can review it and in some cases, add a comment to change it, if needed.</li>
+<li><code translate="no" dir="ltr">Implementation Plan</code>: This is used to architect changes within your codebase to accomplish a task. These plans contain technical details on what revisions are necessary and are meant to be reviewed by the user, unless you have your artifact review policy set to &#34;Always Proceed&#34;.</li>
+<li><code translate="no" dir="ltr">Walkthrough</code>: This is created once the agent has completed task implementation, as a summary of the changes and how to test them.</li>
+<li><code translate="no" dir="ltr">Code diffs</code>: While technically not an artifact, Antigravity also produces code diffs that you can review and comment on.</li>
+<li><code translate="no" dir="ltr">Screenshots</code>: The agent captures the state of the UI before and after a change.</li>
+<li><code translate="no" dir="ltr">Browser Recordings</code>: For dynamic interactions (e.g., &#34;Click the login button, wait for the spinner, verify the dashboard loads&#34;), the agent records a video of its session. The developer can watch this video to verify that the functional requirement is met without running the app themselves.</li>
+</ul>
+<p>Artifacts are produced and appear in both the Agent Manager and Editor views.</p>
+<p>In the Editor view, on the bottom right corner, you can click on <code translate="no" dir="ltr">Artifacts</code>:</p>
+<p class="image-container"><img alt="5deff47fe0a93aa1.png" style="width: 473.00px" src="/static/getting-started-google-antigravity/img/5deff47fe0a93aa1.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5deff47fe0a93aa1_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>In the Agent Manager view, on the top right, next to <code translate="no" dir="ltr">Review changes</code>, you should be able to see a button to toggle the artifacts or if it&#39;s toggled on, you can see the generated artifacts list:</p>
+<p class="image-container"><img alt="5320f447471c43eb.png" style="width: 267.50px" src="/static/getting-started-google-antigravity/img/5320f447471c43eb.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5320f447471c43eb_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>You should see the Artifacts view as shown below. In our case here, we instructed the Agent to visit the <code translate="no" dir="ltr">antigravity.google</code> page and hence it has captured the screenshot, created a video of the same:</p>
+<p class="image-container"><img alt="19d9738bb3c7c0c9.png" style="width: 448.50px" src="/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/19d9738bb3c7c0c9_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>You can see code diffs in <code translate="no" dir="ltr">Review Changes</code> in the Editor view:</p>
+<p class="image-container"><img alt="e1d8fd6e7df4daf3.png" style="width: 453.00px" src="/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e1d8fd6e7df4daf3_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Developers can interact with these artifacts and code diffs using &#34;Google Docs-style comments.&#34; You can select a specific action or task, provide a command the way you would like it to be and then submit that to the agent. The agent will then ingest this feedback and iterate accordingly. Think about using interactive Google Docs, where you provide feedback to the author and the author then reiterates on that.</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Revisit the Inbox" duration="2" step="5">
+          
+          <h2 class="step-title" id="5" data-text="Revisit the Inbox" tabindex="-1">
+              6. Revisit the Inbox
+          </h2>
+          <p>If you have started a few conversations with the Agents, you should now take a look at your <code translate="no" dir="ltr">Inbox</code> in the <code translate="no" dir="ltr">Agent Manager</code> window. This will show you all the conversations. Click on any of the conversations to see the history of that conversation, the artifacts produced and more. In our case, after we ran the first conversation, our Inbox shows the conversation listed, as shown below:</p>
+<p class="image-container"><img alt="1a2a1bbdd4464ecf.png" style="width: 471.50px" src="/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/1a2a1bbdd4464ecf_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Clicking on that conversation will provide you the details:</p>
+<p class="image-container"><img alt="b7e493765cfb1b1a.png" style="width: 518.50px" src="/static/getting-started-google-antigravity/img/b7e493765cfb1b1a.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/b7e493765cfb1b1a_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>You can continue the conversation from here too.</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Editor" duration="5" step="6">
+          
+          <h2 class="step-title" id="6" data-text="Editor" tabindex="-1">
+              7. Editor
+          </h2>
+          <p>The editor retains the familiarity of VS Code, ensuring that the muscle memory of seasoned developers is respected. It includes the standard file explorer, syntax highlighting, and extensions ecosystem.</p>
+<p>You can click on the <code translate="no" dir="ltr">Open Editor</code> button right on the top right in Agent Manager to go to the Editor.</p>
+<h2 is-upgraded id="setup-and-extensions" data-text="Setup and Extensions" tabindex="-1">Setup and Extensions</h2>
+<p>In a typical setup, you&#39;d have the editor, the terminal, and the agent visible:</p>
+<p class="image-container"><img alt="7996408528de93e1.png" style="width: 624.00px" src="/static/getting-started-google-antigravity/img/7996408528de93e1.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/7996408528de93e1_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>If this is not the case, you can toggle terminal and agent panels as follows:</p>
+<ul>
+<li>To toggle the terminal panel, use the <code translate="no" dir="ltr">Ctrl + `</code> shortcut.</li>
+<li>To toggle the agent panel, use the <code translate="no" dir="ltr">Cmd + L</code> shortcut.</li>
+</ul>
+<p>Additionally, Antigravity can install some extensions during setup but depending on the programming language you&#39;re using, you probably need to install more extensions. For example, for Python development, these are the extensions you might choose to install:</p>
+<p class="image-container"><img alt="bd33a79837b5a12a.png" style="width: 308.00px" src="/static/getting-started-google-antigravity/img/bd33a79837b5a12a.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bd33a79837b5a12a_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h2 is-upgraded id="editor" data-text="Editor" tabindex="-1">Editor</h2>
+<h3 is-upgraded id="auto-complete" data-text="Auto-complete" tabindex="-1">Auto-complete</h3>
+<p>As you type code in the editor, a smart auto-complete kicks in that you can simply tab in:</p>
+<p class="image-container"><img alt="e90825ed7a009350.png" style="width: 291.00px" src="/static/getting-started-google-antigravity/img/e90825ed7a009350.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e90825ed7a009350_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h3 is-upgraded id="tab-to-import" data-text="Tab to import" tabindex="-1">Tab to import</h3>
+<p>You get <strong>tab to import</strong> suggestion to add missing dependencies:</p>
+<p class="image-container"><img alt="bcab60794caa0aec.png" style="width: 611.00px" src="/static/getting-started-google-antigravity/img/bcab60794caa0aec.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bcab60794caa0aec_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h3 is-upgraded id="tab-to-jump" data-text="Tab to jump" tabindex="-1">Tab to jump</h3>
+<p>You get <strong>tab to jump</strong> suggestions to get the cursor to the next logical place in the code:</p>
+<p class="image-container"><img alt="8610ae5217be7fe5.png" style="width: 477.00px" src="/static/getting-started-google-antigravity/img/8610ae5217be7fe5.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8610ae5217be7fe5_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h3 is-upgraded id="commands" data-text="Commands" tabindex="-1">Commands</h3>
+<p>You can trigger commands with <code translate="no" dir="ltr">Cmd + I</code> in the editor or terminal for inline completions using natural language.</p>
+<p>In the editor, you can ask for a method to calculate Fibonacci numbers and then accept or reject it:</p>
+<p class="image-container"><img alt="13a615e515cea100.png" style="width: 530.00px" src="/static/getting-started-google-antigravity/img/13a615e515cea100.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/13a615e515cea100_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>In the terminal, you can get terminal command suggestions:</p>
+<p class="image-container"><img alt="5a75e560f998cedc.png" style="width: 491.00px" src="/static/getting-started-google-antigravity/img/5a75e560f998cedc.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5a75e560f998cedc_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h2 is-upgraded id="agent-side-panel" data-text="Agent Side Panel" tabindex="-1">Agent Side Panel</h2>
+<p>From the editor, you can toggle the agent side panel in multiple ways.</p>
+<h3 is-upgraded id="manual-open" data-text="Manual open" tabindex="-1">Manual open</h3>
+<p>You can manually toggle the agent panel on the right with the <code translate="no" dir="ltr">Cmd + L</code> shortcut.</p>
+<p>You can start asking questions, use <code translate="no" dir="ltr">@</code> to include more context such as files, directories, MCP servers, or use <code translate="no" dir="ltr">/</code> to refer to a workflow (a saved prompt):</p>
+<p class="image-container"><img alt="95c5a6d31d771748.png" style="width: 367.00px" src="/static/getting-started-google-antigravity/img/95c5a6d31d771748.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/95c5a6d31d771748_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>You can also choose between two conversation modes: <code translate="no" dir="ltr">Fast</code> or <code translate="no" dir="ltr">Planning</code> :</p>
+<p class="image-container"><img alt="d3d1449f12510e3e.png" style="width: 363.00px" src="/static/getting-started-google-antigravity/img/d3d1449f12510e3e.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d3d1449f12510e3e_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p><code translate="no" dir="ltr">Fast</code> is recommended for quick tasks whereas <code translate="no" dir="ltr">Planning</code> is recommended for more complex tasks where the agent creates a plan that you can approve.</p>
+<p>You can also choose different models for the conversation:</p>
+<p class="image-container"><img alt="af709bcc03c1e21e.png" style="width: 361.00px" src="/static/getting-started-google-antigravity/img/af709bcc03c1e21e.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/af709bcc03c1e21e_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h3 is-upgraded id="explain-and-fix" data-text="Explain and fix" tabindex="-1">Explain and fix</h3>
+<p>Another way of triggering the agent is to hover over a problem and selecting <code translate="no" dir="ltr">Explain and fix</code>:</p>
+<p class="image-container"><img alt="e45cbe02ed76b9c1.png" style="width: 447.00px" src="/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e45cbe02ed76b9c1_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h3 is-upgraded id="send-problems-to-agent" data-text="Send problems to agent" tabindex="-1">Send problems to agent</h3>
+<p>You can also go to the <code translate="no" dir="ltr">Problems</code> section and select <code translate="no" dir="ltr">Send all to Agent</code> to get the agent to try to fix those problems:</p>
+<p class="image-container"><img alt="e4992d14708005d0.png" style="width: 526.00px" src="/static/getting-started-google-antigravity/img/e4992d14708005d0.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/e4992d14708005d0_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h3 is-upgraded id="send-terminal-output-to-agent" data-text="Send terminal output to agent" tabindex="-1">Send terminal output to agent</h3>
+<p>You can even select a part of the terminal output and send it to the agent with <code translate="no" dir="ltr">Cmd + L</code>:</p>
+<p class="image-container"><img alt="c40293bab474c9b1.png" style="width: 624.00px" src="/static/getting-started-google-antigravity/img/c40293bab474c9b1.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/c40293bab474c9b1_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h2 is-upgraded id="toggling-between-editor-and-agent-manager" data-text="Toggling between Editor and Agent Manager" tabindex="-1">Toggling between Editor and Agent Manager</h2>
+<p>At any point, you can switch between the editor mode and the full agent manager mode via the <code translate="no" dir="ltr">Open Agent Manager</code> button on the top right when you are in editor mode and back by clicking on the <code translate="no" dir="ltr">Open Editor</code> button on the top right when you are in the agent manager mode.</p>
+<p>Alternately, you also use <code translate="no" dir="ltr">Cmd + E</code> keyboard shortcut to toggle between the two modes.</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Provide Feedback" duration="15" step="7">
+          
+          <h2 class="step-title" id="7" data-text="Provide Feedback" tabindex="-1">
+              8. Provide Feedback
+          </h2>
+          <p>At the heart of Antigravity is its ability to effortlessly gather your feedback at every stage of the experience. As the agent works on a task, it creates different artifacts along the way:</p>
+<ul>
+<li>An implementation plan and a task list (before coding)</li>
+<li>Code diffs (as it generates code)</li>
+<li>A walkthrough to verify the results (after coding)</li>
+</ul>
+<p>These artifacts are a way for Antigravity to communicate its plans and progress. More importantly, they&#39;re also a way for you to provide feedback to the agent in Google docs style comments. This is very useful to effectively steer the agent in the direction you want.</p>
+<p>Let&#39;s try to build a simple to-do list application and see how we can provide feedback to Antigravity along the way.</p>
+<h2 is-upgraded id="planning-mode" data-text="Planning mode" tabindex="-1">Planning mode</h2>
+<p>First, you need to make sure that Antigravity is in <code translate="no" dir="ltr">Planning</code> mode (instead of <code translate="no" dir="ltr">Fast</code> mode).You can select this in the agent side panel chat. This makes sure that Antigravity creates an implementation plan and a task list before jumping into code. Then, try a prompt, something like this: <code translate="no" dir="ltr">Create a todo list web app using Python</code>. This will kickstart the agent to start planning and produce an implementation plan.</p>
+<h2 is-upgraded id="implementation-plan" data-text="Implementation plan" tabindex="-1">Implementation plan</h2>
+<p>An implementation plan is an overview of what Antigravity intends to do, which tech stack it will use, and a high-level description of the proposed changes.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Carbon"><code translate="no" dir="ltr"><span class="devsite-syntax-nx">Implementation</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Plan</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-o">-</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Python</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Todo</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">App</span>
+<span class="devsite-syntax-nx">Goal</span>
+<span class="devsite-syntax-nx">Create</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">a</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">simple</span><span class="devsite-syntax-p">,</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">functional</span><span class="devsite-syntax-p">,</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">and</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">aesthetically</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">pleasing</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Todo</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">List</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">web</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">application</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">using</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Python</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-nx">Flask</span><span class="devsite-syntax-p">).</span>
+
+<span class="devsite-syntax-nx">Tech</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Stack</span>
+<span class="devsite-syntax-nx">Backend</span><span class="devsite-syntax-p">:</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Python</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">with</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Flask</span>
+<span class="devsite-syntax-nx">Frontend</span><span class="devsite-syntax-p">:</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">HTML5</span><span class="devsite-syntax-p">,</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">CSS3</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-nx">Vanilla</span><span class="devsite-syntax-p">),</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Jinja2</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">templates</span>
+<span class="devsite-syntax-o">...</span>
+</code></pre></devsite-code>
+<p>This is also the first place that you can provide feedback. In our case, the agent wants to use Flask as the Python web framework. We can add a comment to the implementation plan to use FastAPI instead. Once you add the comment, either submit the comment or ask Antigravity to <code translate="no" dir="ltr">Proceed</code> with the updated implementation plan.</p>
+<h2 is-upgraded id="task-list" data-text="Task list" tabindex="-1">Task list</h2>
+<p>After the implementation plan is updated, Antigravity creates a task list. This is a concrete list of steps Antigravity will follow to create and verify the app.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Text only"><code translate="no" dir="ltr">Task Plan
+ Create requirements.txt
+ Create directory structure (static/css, templates)
+ Create static/css/style.css
+ Create templates/index.html
+ Create main.py with FastAPI setup and Database logic
+ Verify application
+</code></pre></devsite-code>
+<p>This is the second place where you can provide feedback.</p>
+<p>For example, in our use case, you can add more detailed verification instructions by adding the following comment: <code translate="no" dir="ltr">Verify application by adding, editing, and deleting a todo item and taking a screenshot.</code></p>
+<aside class="warning"><p>A couple of tips while working on feedbacks:</p>
+<ol type="1">
+<li>Whenever you add a comment to the plans or tasks, make sure you remember to submit the comment. This is what triggers Antigravity to update its plans.</li>
+<li>Sometimes, Antigravity goes to straight coding after creating an implementation plan and task list without waiting for you to confirm. In those cases, you can still comment on the plans/tasks and submit again. This will update the code and walkthrough afterwards. You can also stop the coding task, add comments to plans/tasks and try again.</li>
+</ol>
+</aside>
+<h2 is-upgraded id="code-changes" data-text="Code changes" tabindex="-1">Code changes</h2>
+<p>At this point, Antigravity will generate some code in new files. You can <code translate="no" dir="ltr">Accept all</code> or <code translate="no" dir="ltr">Reject all</code> these changes in the agent chat side panel without looking into details.</p>
+<p>You can also click on <code translate="no" dir="ltr">Review changes</code> to see the details of changes and add detailed comments on the code. For example, we can add the following comment in  <a href="http://main.py" target="_blank"><code translate="no" dir="ltr">main.py</code></a>: <code translate="no" dir="ltr">Add basic comments to all methods</code></p>
+<p>This is a great way of iterating on code with Antigravity.</p>
+<h2 is-upgraded id="walkthrough" data-text="Walkthrough" tabindex="-1">Walkthrough</h2>
+<p>Once Antigravity is done with coding, it starts the server, it opens up a browser to verify the app. It will do some manual testing like adding tasks, updating tasks, etc. All thanks to the Antigravity browser extension. In the end, it creates a walkthrough file to summarize what it did to verify the app. This includes a screenshot or a verification flow with a browser recording.</p>
+<p>You can comment on the screenshot or the browser recording in the walkthrough too. For example, we can add a comment <code translate="no" dir="ltr">Change the blue theme to orange theme</code> and submit. After the comment is submitted, Antigravity makes the changes, verifies the results, and updates the walkthrough</p>
+<h2 is-upgraded id="undo-changes" data-text="Undo changes" tabindex="-1">Undo changes</h2>
+<p>Last but not least, after each step, if you&#39;re not happy with the change, you have the option of undoing it from the chat. You just choose the ↩️ <code translate="no" dir="ltr">Undo changes up to this point</code> in the chat.</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Rules and Workflows" duration="10" step="8">
+          
+          <h2 class="step-title" id="8" data-text="Rules and Workflows" tabindex="-1">
+              9. Rules and Workflows
+          </h2>
+          <p>Antigravity comes with a couple of customization options: <strong>Rules</strong> and <strong>Workflows</strong>.</p>
+<p>Click on the <code translate="no" dir="ltr">...</code> on the top right corner and choose <code translate="no" dir="ltr">Customizations</code>, you will see <code translate="no" dir="ltr">Rules</code> and <code translate="no" dir="ltr">Workflows</code>:</p>
+<p class="image-container"><img alt="ff8babd8d8bcfa83.png" style="width: 411.75px" src="/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/ff8babd8d8bcfa83_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p><strong>Rules</strong> help guide the behavior of the agent. These are guidelines you can provide to make sure the agent follows as it generates code and tests. For example, you might want the agent to follow a certain code style, or to always document methods. You can add these as rules and the agent will take them into account.</p>
+<p><strong>Workflows</strong> are saved prompts that you can trigger on demand with <code translate="no" dir="ltr">/</code>, as you interact with the agent. They also guide the behavior of the agent but they&#39;re triggered by the user on demand.</p>
+<p>A good analogy is that <strong>Rules</strong> are more like system instructions whereas Workflows are more like saved prompts that you can choose on demand.</p>
+<p>Both <strong>Rules</strong> and <strong>Workflows</strong> can be applied globally or per workspace and saved to the following locations:</p>
+<ul>
+<li>Global rule: <code translate="no" dir="ltr">~/.gemini/GEMINI.md</code></li>
+<li>Global workflow: <code translate="no" dir="ltr">~/.gemini/antigravity/global_workflows/global-workflow.md</code></li>
+<li>Workspace rules: <code translate="no" dir="ltr">your-workspace/.agent/rules/</code></li>
+<li>Workspace workflows: <code translate="no" dir="ltr">your-workspace/.agent/workflows/</code></li>
+</ul>
+<p>Let&#39;s add some rules and workflows in the workspace.</p>
+<h2 is-upgraded id="add-a-rule" data-text="Add a rule" tabindex="-1">Add a rule</h2>
+<p>First, let&#39;s add a code style rule. Go to <code translate="no" dir="ltr">Rules</code> and select the <code translate="no" dir="ltr">+Workspace</code> button. Give it a name such as <code translate="no" dir="ltr">code-style-guide</code> with the following code style rules:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr"><span class="devsite-syntax-k">*</span> Make sure all the code is styled with PEP 8 style guide
+<span class="devsite-syntax-k">*</span> Make sure all the code is properly commented
+</code></pre></devsite-code>
+<p>Second, let&#39;s add another rule to make sure the code is generated in a modular way with examples in a <code translate="no" dir="ltr">code-generation-guide</code> rule:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Carbon"><code translate="no" dir="ltr"><span class="devsite-syntax-o">*</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">The</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">main</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">method</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">in</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">main</span><span class="devsite-syntax-p">.</span><span class="devsite-syntax-nx">py</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">is</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">the</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">entry</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">point</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">to</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">showcase</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">functionality</span><span class="devsite-syntax-p">.</span>
+<span class="devsite-syntax-o">*</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Do</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">not</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">generate</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">code</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">in</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">the</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">main</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">method</span><span class="devsite-syntax-p">.</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Instead</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">generate</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">distinct</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">functionality</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">in</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">a</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">new</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">file</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-nx">eg</span><span class="devsite-syntax-p">.</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">feature_x</span><span class="devsite-syntax-p">.</span><span class="devsite-syntax-nx">py</span><span class="devsite-syntax-p">)</span>
+<span class="devsite-syntax-o">*</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">Then</span><span class="devsite-syntax-p">,</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">generate</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">example</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">code</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">to</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">show</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">the</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">new</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">functionality</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">in</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">a</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">new</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">method</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">in</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">main</span><span class="devsite-syntax-p">.</span><span class="devsite-syntax-nx">py</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-nx">eg</span><span class="devsite-syntax-p">.</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">example_feature_x</span><span class="devsite-syntax-p">)</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">and</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">simply</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">call</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">that</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">method</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">from</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">the</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">main</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nx">method</span><span class="devsite-syntax-p">.</span>
+</code></pre></devsite-code>
+<p>The two rules are saved and ready:</p>
+<p class="image-container"><img alt="bfd179dfef6b2355.png" style="width: 461.50px" src="/static/getting-started-google-antigravity/img/bfd179dfef6b2355.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/bfd179dfef6b2355_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h2 is-upgraded id="add-a-workflow" data-text="Add a workflow" tabindex="-1">Add a workflow</h2>
+<p>Let&#39;s also define a workflow to generate unit tests. This will allow us to trigger unit tests once we&#39;re happy with the code (rather than the agent generating unit tests all the time).</p>
+<p>Go to <code translate="no" dir="ltr">Workflows</code> and select the <code translate="no" dir="ltr">+Workspace</code> button. Give it a name such as <code translate="no" dir="ltr">generate-unit-tests</code> with the following:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr"><span class="devsite-syntax-k">*</span> Generate unit tests for each file and each method
+<span class="devsite-syntax-k">*</span> Make sure the unit tests are named similar to files but with test_ prefix
+</code></pre></devsite-code>
+<p>The workflow is also ready to go now:</p>
+<p class="image-container"><img alt="d22059258592f0e1.png" style="width: 392.50px" src="/static/getting-started-google-antigravity/img/d22059258592f0e1.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d22059258592f0e1_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h2 is-upgraded id="try-it-out" data-text="Try it out" tabindex="-1">Try it out</h2>
+<p>Let&#39;s now see rules and workflows in action. Create a skeleton <code translate="no" dir="ltr">main.py</code> file in your workspace:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+</code></pre></devsite-code>
+<p>Now, go to the agent chat window and ask the agent: <code translate="no" dir="ltr">Implement binary search and bubble sort.</code></p>
+<p>After a minute or two, you should get three files in the workspace: <code translate="no" dir="ltr">main.py</code>, <code translate="no" dir="ltr">bubble_sort.py</code>, <code translate="no" dir="ltr">binary_search.py</code>. You&#39;ll also notice that all the rules are implemented: the main file is not cluttered and has the example code, each feature is implemented in its own file, all the code is documented and in good style:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-kn">from</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nn">binary_search</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-kn">import</span> <span class="devsite-syntax-n">binary_search</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">binary_search_recursive</span>
+<span class="devsite-syntax-kn">from</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nn">bubble_sort</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-kn">import</span> <span class="devsite-syntax-n">bubble_sort</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">bubble_sort_descending</span>
+
+
+<span class="devsite-syntax-k">def</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nf">example_binary_search</span><span class="devsite-syntax-p">():</span>
+<span class="devsite-syntax-w">    </span><span class="devsite-syntax-sd">"""</span>
+<span class="devsite-syntax-sd">    Demonstrate binary search algorithm with various test cases.</span>
+<span class="devsite-syntax-sd">    """</span>
+    <span class="devsite-syntax-o">...</span>
+
+<span class="devsite-syntax-k">def</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nf">example_bubble_sort</span><span class="devsite-syntax-p">():</span>
+<span class="devsite-syntax-w">    </span><span class="devsite-syntax-sd">"""</span>
+<span class="devsite-syntax-sd">    Demonstrate bubble sort algorithm with various test cases.</span>
+<span class="devsite-syntax-sd">    """</span>
+    <span class="devsite-syntax-o">...</span>
+
+<span class="devsite-syntax-k">def</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nf">main</span><span class="devsite-syntax-p">():</span>
+<span class="devsite-syntax-w">    </span><span class="devsite-syntax-sd">"""</span>
+<span class="devsite-syntax-sd">    Main entry point to showcase functionality.</span>
+<span class="devsite-syntax-sd">    """</span>
+    <span class="devsite-syntax-n">example_binary_search</span><span class="devsite-syntax-p">()</span>
+    <span class="devsite-syntax-n">example_bubble_sort</span><span class="devsite-syntax-p">()</span>
+    <span class="devsite-syntax-nb">print</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-s2">"</span><span class="devsite-syntax-se">\n</span><span class="devsite-syntax-s2">"</span> <span class="devsite-syntax-o">+</span> <span class="devsite-syntax-s2">"="</span> <span class="devsite-syntax-o">*</span> <span class="devsite-syntax-mi">60</span><span class="devsite-syntax-p">)</span>
+
+
+<span class="devsite-syntax-k">if</span> <span class="devsite-syntax-vm">__name__</span> <span class="devsite-syntax-o">==</span> <span class="devsite-syntax-s2">"__main__"</span><span class="devsite-syntax-p">:</span>
+    <span class="devsite-syntax-n">main</span><span class="devsite-syntax-p">()</span>
+</code></pre></devsite-code>
+<p>Now that we&#39;re happy with the code, let&#39;s see if we can trigger the generate unit test workflow.</p>
+<p>Go to the chat and start typing <code translate="no" dir="ltr">/generate</code> and Antigravity already knows about our workflow:</p>
+<p class="image-container"><img alt="8a3efd9e3be7eb6f.png" style="width: 442.50px" src="/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/8a3efd9e3be7eb6f_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Select <code translate="no" dir="ltr">generate-unit-tests</code> and enter. After a few seconds, you&#39;ll get new files in your workspace: <code translate="no" dir="ltr">test_binary_search.py</code>, <code translate="no" dir="ltr">test_bubble_sort.py</code> with a number of tests already implemented!</p>
+<p class="image-container"><img alt="11febd7940ef8199.png" style="width: 190.50px" src="/static/getting-started-google-antigravity/img/11febd7940ef8199.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/11febd7940ef8199_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Nice!</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Skills" duration="15" step="9">
+          
+          <h2 class="step-title" id="9" data-text="Skills" tabindex="-1">
+              10. Skills
+          </h2>
+          <p>While Antigravity&#39;s underlying models (like Gemini) are powerful generalists, they don&#39;t know your specific project context or team standards . Loading every single rule or tool into the agent&#39;s context window leads to &#34;tool bloat&#34;, higher costs, latency and confusion.</p>
+<p>Antigravity Skills solve this through Progressive Disclosure. A <strong>Skill</strong> is a specialized package of knowledge that sits dormant until needed. It is only loaded into the agent&#39;s context when your specific request matches the skill&#39;s description .</p>
+<h2 is-upgraded id="structure-and-scope" data-text="Structure and Scope" tabindex="-1">Structure and Scope</h2>
+<p>Skills are directory-based packages. You can define them in two scopes depending on your needs:</p>
+<ul>
+<li>Global Scope (<code translate="no" dir="ltr">~/.gemini/antigravity/skills/</code>): Available across all your projects (e.g., &#34;Format JSON&#34;, &#34;General Code Review&#34;) .</li>
+<li>Workspace Scope (<code translate="no" dir="ltr">&lt;workspace-root&gt;/.agent/skills/</code>): Available only within a specific project (e.g., &#34;Deploy to this app&#39;s staging&#34;, &#34;Generate boilerplate for this specific framework&#34;) .</li>
+</ul>
+<h2 is-upgraded id="the-anatomy-of-a-skill" data-text="The Anatomy of a Skill" tabindex="-1">The Anatomy of a Skill</h2>
+<p>A typical skill directory looks like this :</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Text only"><code translate="no" dir="ltr">my-skill/
+├── SKILL.md    #(Required) metadata &amp; instructions.
+├── scripts/    # (Optional) Python or Bash scripts for execution.
+├── references/ # (Optional) text, documentation, or templates.
+└── assets/     # (Optional) Images or logos.
+</code></pre></devsite-code>
+<p>Let&#39;s add some skills now.</p>
+<h2 is-upgraded id="code-review-skill" data-text="Code Review Skill" tabindex="-1">Code Review Skill</h2>
+<p>This is an instruction-only skill i.e. we only need to create the <code translate="no" dir="ltr">SKILL.md</code> file, that will contain the metadata and the skills instructions. Let&#39;s create a <strong>global skill</strong> that provides details to the agent to review code changes for bugs, style issues and best practices.</p>
+<p>First up, create the directory that will contain this global skill.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Text only"><code translate="no" dir="ltr">mkdir -p ~/.gemini/antigravity/skills/code-review
+</code></pre></devsite-code>
+<p>Create a <code translate="no" dir="ltr">SKILL.md</code> file in the above directory with the content shown below:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">---
+name: code-review
+description: Reviews code changes for bugs, style issues, and best practices. Use when reviewing PRs or checking code quality.
+---
+
+<span class="devsite-syntax-gh">#</span> Code Review Skill
+
+When reviewing code, follow these steps:
+
+<span class="devsite-syntax-gu">##</span> Review checklist
+
+1. **Correctness**: Does the code do what it's supposed to?
+2. **Edge cases**: Are error conditions handled?
+3. **Style**: Does it follow project conventions?
+4. **Performance**: Are there obvious inefficiencies?
+
+<span class="devsite-syntax-gu">##</span> How to provide feedback
+
+<span class="devsite-syntax-k">-</span> Be specific about what needs to change
+<span class="devsite-syntax-k">-</span> Explain why, not just what
+<span class="devsite-syntax-k">-</span> Suggest alternatives when possible
+</code></pre></devsite-code>
+<p>Notice that the <code translate="no" dir="ltr">SKILL.md</code> file above contains the metadata (name and description) at the top and then the instructions. The Agent when it loads will only read the metadata for the skills that you have configured and it will load the instructions for the skill, only if required.</p>
+<h3 is-upgraded id="try-it-out_1" data-text="Try it out" tabindex="-1">Try it out</h3>
+<p>Create a file named <code translate="no" dir="ltr">demo_bad_code.py</code> with the contents as shown below:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-kn">import</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nn">time</span>
+
+<span class="devsite-syntax-k">def</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nf">get_user_data</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">users</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-nb">id</span><span class="devsite-syntax-p">):</span>
+   <span class="devsite-syntax-c1"># Find user by ID</span>
+   <span class="devsite-syntax-k">for</span> <span class="devsite-syntax-n">u</span> <span class="devsite-syntax-ow">in</span> <span class="devsite-syntax-n">users</span><span class="devsite-syntax-p">:</span>
+       <span class="devsite-syntax-k">if</span> <span class="devsite-syntax-n">u</span><span class="devsite-syntax-p">[</span><span class="devsite-syntax-s1">'id'</span><span class="devsite-syntax-p">]</span> <span class="devsite-syntax-o">==</span> <span class="devsite-syntax-nb">id</span><span class="devsite-syntax-p">:</span>
+            <span class="devsite-syntax-k">return</span> <span class="devsite-syntax-n">u</span>
+   <span class="devsite-syntax-k">return</span> <span class="devsite-syntax-kc">None</span>
+
+<span class="devsite-syntax-k">def</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nf">process_payments</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">items</span><span class="devsite-syntax-p">):</span>
+   <span class="devsite-syntax-n">total</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-mi">0</span>
+   <span class="devsite-syntax-k">for</span> <span class="devsite-syntax-n">i</span> <span class="devsite-syntax-ow">in</span> <span class="devsite-syntax-n">items</span><span class="devsite-syntax-p">:</span>
+       <span class="devsite-syntax-c1"># Calculate tax</span>
+       <span class="devsite-syntax-n">tax</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">i</span><span class="devsite-syntax-p">[</span><span class="devsite-syntax-s1">'price'</span><span class="devsite-syntax-p">]</span> <span class="devsite-syntax-o">*</span> <span class="devsite-syntax-mf">0.1</span>
+       <span class="devsite-syntax-n">total</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">total</span> <span class="devsite-syntax-o">+</span> <span class="devsite-syntax-n">i</span><span class="devsite-syntax-p">[</span><span class="devsite-syntax-s1">'price'</span><span class="devsite-syntax-p">]</span> <span class="devsite-syntax-o">+</span> <span class="devsite-syntax-n">tax</span>
+       <span class="devsite-syntax-n">time</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">sleep</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-mf">0.1</span><span class="devsite-syntax-p">)</span> <span class="devsite-syntax-c1"># Simulate slow network call</span>
+  
+   <span class="devsite-syntax-k">return</span> <span class="devsite-syntax-n">total</span>
+
+<span class="devsite-syntax-k">def</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nf">run_batch</span><span class="devsite-syntax-p">():</span>
+   <span class="devsite-syntax-n">users</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-p">[{</span><span class="devsite-syntax-s1">'id'</span><span class="devsite-syntax-p">:</span> <span class="devsite-syntax-mi">1</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-s1">'name'</span><span class="devsite-syntax-p">:</span> <span class="devsite-syntax-s1">'Alice'</span><span class="devsite-syntax-p">},</span> <span class="devsite-syntax-p">{</span><span class="devsite-syntax-s1">'id'</span><span class="devsite-syntax-p">:</span> <span class="devsite-syntax-mi">2</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-s1">'name'</span><span class="devsite-syntax-p">:</span> <span class="devsite-syntax-s1">'Bob'</span><span class="devsite-syntax-p">}]</span>
+   <span class="devsite-syntax-n">items</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-p">[{</span><span class="devsite-syntax-s1">'price'</span><span class="devsite-syntax-p">:</span> <span class="devsite-syntax-mi">10</span><span class="devsite-syntax-p">},</span> <span class="devsite-syntax-p">{</span><span class="devsite-syntax-s1">'price'</span><span class="devsite-syntax-p">:</span> <span class="devsite-syntax-mi">20</span><span class="devsite-syntax-p">},</span> <span class="devsite-syntax-p">{</span><span class="devsite-syntax-s1">'price'</span><span class="devsite-syntax-p">:</span> <span class="devsite-syntax-mi">100</span><span class="devsite-syntax-p">}]</span>
+  
+   <span class="devsite-syntax-n">u</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">get_user_data</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">users</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-mi">3</span><span class="devsite-syntax-p">)</span>
+   <span class="devsite-syntax-nb">print</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-s2">"User found: "</span> <span class="devsite-syntax-o">+</span> <span class="devsite-syntax-n">u</span><span class="devsite-syntax-p">[</span><span class="devsite-syntax-s1">'name'</span><span class="devsite-syntax-p">])</span> <span class="devsite-syntax-c1"># Will crash if None</span>
+  
+   <span class="devsite-syntax-nb">print</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-s2">"Total: "</span> <span class="devsite-syntax-o">+</span> <span class="devsite-syntax-nb">str</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">process_payments</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">items</span><span class="devsite-syntax-p">)))</span>
+
+<span class="devsite-syntax-k">if</span> <span class="devsite-syntax-vm">__name__</span> <span class="devsite-syntax-o">==</span> <span class="devsite-syntax-s2">"__main__"</span><span class="devsite-syntax-p">:</span>
+   <span class="devsite-syntax-n">run_batch</span><span class="devsite-syntax-p">()</span>
+</code></pre></devsite-code>
+<p>Ask the agent: <code translate="no" dir="ltr">review the @demo_bad_code.py file</code>. The Agent should identify the <code translate="no" dir="ltr">code-review</code> skill, load the details and then perform the action as per the instructions given in the <code translate="no" dir="ltr">code-review/SKILL.md</code> file.</p>
+<p>A sample output is shown below:</p>
+<p class="image-container"><img alt="d90a989f4555e2fc.png" style="width: 624.00px" src="/static/getting-started-google-antigravity/img/d90a989f4555e2fc.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/d90a989f4555e2fc_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<h2 is-upgraded id="the-code-header-template-skill" data-text="The Code Header Template Skill" tabindex="-1">The Code Header Template Skill</h2>
+<p>Sometimes a skill needs to use a large block of static text (like a license header). Putting this text directly into the prompt is wasteful. Instead, we put it in a <code translate="no" dir="ltr">resources/</code> folder and instruct the agent to read it only when necessary .</p>
+<p>First up, create the directory that will contain this <strong>workspace skill</strong>.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Text only"><code translate="no" dir="ltr">mkdir -p .agent/skills/license-header-adder/resources
+</code></pre></devsite-code>
+<p>Create <code translate="no" dir="ltr">.agent/skills/license-header-adder/resources/HEADER.txt</code> with your license text:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Scilab"><code translate="no" dir="ltr"><span class="devsite-syntax-o">/*</span>
+<span class="devsite-syntax-w"> </span><span class="devsite-syntax-o">*</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">Copyright</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">c</span><span class="devsite-syntax-p">)</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-mi">2026</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">YOUR_COMPANY_NAME</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">LLC</span><span class="devsite-syntax-p">.</span>
+<span class="devsite-syntax-w"> </span><span class="devsite-syntax-o">*</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">All</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">rights</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">reserved</span><span class="devsite-syntax-p">.</span>
+<span class="devsite-syntax-w"> </span><span class="devsite-syntax-o">*</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">This</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">code</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">is</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">proprietary</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nb">and</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-n">confidential</span><span class="devsite-syntax-p">.</span>
+<span class="devsite-syntax-w"> </span><span class="devsite-syntax-o">*/</span>
+</code></pre></devsite-code>
+<p>Create a <code translate="no" dir="ltr">.agent/skills/license-header-adder/SKILL.md</code> file with contents as shown below:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">---
+name: license-header-adder
+description: Adds the standard corporate license header to new source files.
+---
+
+<span class="devsite-syntax-gh">#</span> License Header Adder
+
+This skill ensures that all new source files have the correct copyright header.
+
+<span class="devsite-syntax-gu">##</span> Instructions
+1. **Read the Template**: Read the content of <span class="devsite-syntax-sb">`resources/HEADER.txt`</span>.
+2. **Apply to File**: When creating a new file, prepend this exact content.
+3. **Adapt Syntax**: 
+   <span class="devsite-syntax-k">-</span> For C-style languages (Java, TS), keep the <span class="devsite-syntax-sb">`/* */`</span> block.
+   <span class="devsite-syntax-k">-</span> For Python/Shell, convert to <span class="devsite-syntax-sb">`#`</span> comments.
+</code></pre></devsite-code>
+<h3 is-upgraded id="try-it-out_2" data-text="Try it out" tabindex="-1">Try it out</h3>
+<p>Ask the Agent the following: <code translate="no" dir="ltr">Create a new Python script named data_processor.py that prints 'Hello World'.</code></p>
+<p>The agent will read the template, convert the C-style comments to Python style, and prepend them to your new file automatically.</p>
+<p>By creating these skills, you have effectively turned the generalist Gemini model into a specialist for your project. You have codified your best practices, whether it&#39;s following your code review guidelines or license headers. Instead of repeatedly prompting the AI to &#34;remember to add the license&#34; or &#34;fix the commit format,&#34; the agent now instinctively knows how to work on your team.</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Securing the Agent" duration="10" step="10">
+          
+          <h2 class="step-title" id="10" data-text="Securing the Agent" tabindex="-1">
+              11. Securing the Agent
+          </h2>
+          <p>Giving an AI agent access to your terminal and browser is a double-edged sword. It enables autonomous debugging and deployment but also opens vectors for Prompt Injection and Data Exfiltration.</p>
+<p>Antigravity addresses this through a granular permission system revolving around Terminal Command Auto Execution policies, Allow Lists, and Deny Lists.</p>
+<p>When you first configure Antigravity, or via the settings menu, you must select a <code translate="no" dir="ltr">Terminal Command Auto Execution</code> policy. This setting dictates the agent&#39;s autonomy regarding shell commands.</p>
+<p>You can view your current settings for this by going to <code translate="no" dir="ltr">Antigravity — Settings</code>, then <code translate="no" dir="ltr">Advanced Settings</code>. You should see the <code translate="no" dir="ltr">Terminal</code> section for the Agent settings. Keep this table in mind, should you want to change this setting to something else:</p>
+<table class="vertical-rules">
+<tr><td colspan="1" rowspan="1"><p><strong>Policy Mode</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>Description</strong></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Off</p>
+</td><td colspan="1" rowspan="1"><p>The agent never auto-executes terminal commands unless explicitly allowed.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Auto</p>
+</td><td colspan="1" rowspan="1"><p>The agent decides whether to execute based on internal safety models. It asks for permission for risky commands.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Turbo</p>
+</td><td colspan="1" rowspan="1"><p>The agent always auto-executes commands unless explicitly denied.</p>
+</td></tr>
+</table>
+<h2 is-upgraded id="configuring-the-allow-list" data-text="Configuring the Allow List" tabindex="-1">Configuring the Allow List</h2>
+<p>The <strong>Allow List</strong> is used primarily with the <strong>Off</strong> policy. It represents a positive security model, meaning everything is forbidden unless expressly permitted. This is the most secure configuration.</p>
+<h3 is-upgraded id="step-by-step-configuration" data-text="Step-by-Step Configuration" tabindex="-1">Step-by-Step Configuration</h3>
+<ol type="1">
+<li>Set the <strong>Terminal Command Auto Execution</strong> setting to <strong>Off</strong>.</li>
+<li>Add the following command in the <strong>Allow List Terminal Commands</strong> by clicking on the <strong>Add</strong> button next to it : <code translate="no" dir="ltr">ls -al</code> . You can add other terminal commands too, if you&#39;d like.</li>
+</ol>
+<h3 is-upgraded id="testing-the-allow-list" data-text="Testing the Allow List" tabindex="-1">Testing the Allow List</h3>
+<ul>
+<li>Ask the agent: <code translate="no" dir="ltr">List the files in this directory</code>.</li>
+<li>The agent runs <code translate="no" dir="ltr">ls</code> automatically.</li>
+<li>Ask the agent: <code translate="no" dir="ltr">Delete the &lt;some file&gt;</code></li>
+<li>The agent will attempt <code translate="no" dir="ltr">rm &lt;filepath&gt;</code>, but Antigravity will block it and force a user review because <code translate="no" dir="ltr">rm</code> is not in the allow list. You should have Antigravity asking you for permission before running the command.</li>
+</ul>
+<aside class="warning"><p><strong>Note:</strong> You might need to restart Antigravity for the allow list to take effect.</p>
+</aside>
+<h2 is-upgraded id="configuring-the-deny-list" data-text="Configuring the Deny List" tabindex="-1">Configuring the Deny List</h2>
+<p>The <strong>Deny List</strong> is the safeguard for the Turbo (and sometimes <strong>Auto</strong>) policy. It represents a negative security model, meaning everything is allowed unless expressly forbidden. This relies on the developer anticipating every possible danger, which is a risky proposition, but one that offers maximum speed.</p>
+<h3 is-upgraded id="step-by-step-configuration_1" data-text="Step-by-Step Configuration" tabindex="-1">Step-by-Step Configuration</h3>
+<ol type="1">
+<li>Set the <strong>Terminal Command Auto Execution</strong> setting to <strong>Turbo</strong>.</li>
+<li>Add the following commands in the <strong>Deny List Terminal Commands</strong> by clicking on the <strong>Add</strong> button next to it.</li>
+<li>rm</li>
+<li>rmdir</li>
+<li>sudo</li>
+<li>curl</li>
+<li>wget</li>
+</ol>
+<h3 is-upgraded id="testing-the-deny-list" data-text="Testing the Deny List" tabindex="-1">Testing the Deny List</h3>
+<ul>
+<li>Ask the agent: <code translate="no" dir="ltr">Check the version of python</code>.</li>
+<li>The agent runs <code translate="no" dir="ltr">python --version</code> automatically.</li>
+<li>Ask the agent: <code translate="no" dir="ltr">Download</code>  <a href="http://www.google.com/" target="_blank"><code translate="no" dir="ltr">www.google.com</code></a> <code translate="no" dir="ltr">home page</code>.</li>
+<li>The agent attempts to <code translate="no" dir="ltr">curl</code>. Antigravity detects <code translate="no" dir="ltr">curl</code> in the denylist and blocks execution, prompting you for manual approval.</li>
+</ul>
+<aside class="warning"><p><strong>Note:</strong> You might need to restart Antigravity for the deny list to take effect.</p>
+</aside>
+<h2 is-upgraded id="browser-security" data-text="Browser Security" tabindex="-1">Browser Security</h2>
+<p>Antigravity&#39;s ability to browse the web is a superpower, but also a vulnerability. An agent visiting a compromised documentation site could encounter a prompt injection attack.</p>
+<p>To help prevent this, you can implement a <strong>Browser URL Allowlist</strong> for the browser agent.</p>
+<p>You can view your current settings for this by going to <code translate="no" dir="ltr">Antigravity — Settings</code> and then <code translate="no" dir="ltr">Advanced Settings</code>. You should see the Browser URL Allowlist section for the Browser settings as shown below:</p>
+<p class="image-container"><img alt="5ed231150122ecc5.png" style="width: 624.00px" src="/static/getting-started-google-antigravity/img/5ed231150122ecc5.png" srcset="https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_36.png 36w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_48.png 48w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_72.png 72w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_96.png 96w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_480.png 480w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_720.png 720w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_856.png 856w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_960.png 960w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_1440.png 1440w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_1920.png 1920w,https://codelabs.developers.google.com/static/getting-started-google-antigravity/img/5ed231150122ecc5_2880.png 2880w" sizes="(max-width: 840px) 100vw, 856px"></p>
+<p>Click on the Open Allowlist File and that opens up the file in the folder <code translate="no" dir="ltr">HOME/.gemini/antigravity/browserAllowlist.txt.</code> You can ensure that only trusted domains are entered over here.</p>
+
+
+        </google-codelab-step>
+      
+        <google-codelab-step label="Conclusion and Next Steps" duration="0" step="11">
+          
+          <h2 class="step-title" id="11" data-text="Conclusion and Next Steps" tabindex="-1">
+              12. Conclusion and Next Steps
+          </h2>
+          <p>Congratulations! You have now successfully installed Antigravity, configured your environment, and learned how to control your agents.</p>
+<p><strong>What&#39;s Next?</strong> To see Antigravity in action building real-world applications, including a dynamic conference website and a productivity app, proceed to the next codelab :  <a href="https://codelabs.developers.google.com/building-with-google-antigravity" target="_blank">Building with Google Antigravity</a>.</p>
+<h2 is-upgraded id="reference-docs" data-text="Reference docs" tabindex="-1"><strong>Reference docs</strong></h2>
+<ul>
+<li>Official Site :  <a href="https://antigravity.google/" target="_blank">https://antigravity.google/</a></li>
+<li>Documentation:  <a href="https://antigravity.google/docs" target="_blank">https://antigravity.google/docs</a></li>
+<li>Usecases :  <a href="https://antigravity.google/use-cases" target="_blank">https://antigravity.google/use-cases</a></li>
+<li>Download :  <a href="https://antigravity.google/download" target="_blank">https://antigravity.google/download</a></li>
+<li>Youtube Channel for Google Antigravity :  <a href="https://www.youtube.com/@googleantigravity" target="_blank">https://www.youtube.com/@googleantigravity</a></li>
+</ul>
+
+
+        </google-codelab-step>
+      
+    </google-codelab>
+  
+  
+
+  
+</div>
+
+  
+    
+    
+    
+  
+
+  <div class="devsite-floating-action-buttons"></div></article>
+
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  
+</devsite-content-footer>
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  
+  
+    <template class="devsite-content-data-template">
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],[],[],[]]
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Connect</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//googledevelopers.blogspot.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Blog
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//www.facebook.com/Google-Developers-967415219957038"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Facebook
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//medium.com/google-developers"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Medium
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//twitter.com/googledevs"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+          
+            Twitter
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//www.youtube.com/user/GoogleDevelopers"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 5)"
+            >
+            
+              
+              
+            
+          
+            YouTube
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Programs</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//www.womentechmakers.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Women Techmakers
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//developers.google.com/community/gdg"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Google Developer Groups
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//developers.google.com/community/experts"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Google Developer Experts
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//developers.google.com/community/accelerators"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+              
+              
+            
+          
+            Accelerators
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Developer consoles</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Google API Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Google Cloud Platform Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Google Play Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+          
+            Firebase Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 5)"
+            >
+            
+          
+            Actions on Google Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 6)"
+            >
+            
+          
+            Cast SDK Developer Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 7)"
+            >
+            
+              
+              
+            
+          
+            Chrome Web Store Dashboard
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+  
+  <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <picture>
+        
+        <img class="devsite-footer-sites-logo"
+             src="https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/images/lockup-google-for-developers.svg"
+             loading="lazy"
+             alt="Google Developers">
+      </picture>
+    </a>
+    <ul class="devsite-footer-sites-list">
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Android Link"
+         
+         >
+          Android
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Chrome Link"
+         
+         >
+          Chrome
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Firebase Link"
+         
+         >
+          Firebase
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google Cloud Platform Link"
+         
+         >
+          Google Cloud Platform
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developers.google.com/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer All products Link"
+         
+         >
+          All products
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//developers.google.com/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel>
+          
+        </devsite-panel>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+      
+        <script type="application/json" analytics>[]</script>
+<script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [], &#34;ga4p&#34;: [], &#34;gtm&#34;: [], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;False&#34;, &#34;requested&#34;: &#34;en&#34;, &#34;served&#34;: &#34;en&#34;}, &#34;pageType&#34;: &#34;codelab&#34;, &#34;projectName&#34;: null, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;codelabs&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+    
+<script nonce="TRcgRSDbNtMJR7tp4zRwZOyVrBvkTY">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/js/app_loader.js', '[17,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d","https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs","https://codelabs-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/codelabs/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/images/favicon.png","https://www.gstatic.com/devrel-devsite/prod/v3df8aae39978de8281d519c083a1ff09816fe422ab8f1bf9f8e360a62fb9949d/codelabs/images/lockup.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","codelabs.developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["Profiles__enable_complete_playlist_endpoint","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_playlist_community_acl","DevPro__enable_embed_profile_creation","Cloud__fast_free_trial","DevPro__enable_enterprise","Profiles__enable_auto_apply_credits","MiscFeatureFlags__enable_variable_operator_index_yaml","DevPro__enable_free_benefits","Profiles__enable_callout_notifications","Cloud__enable_cloud_shell_fte_user_flow","Cloud__enable_llm_concierge_chat","TpcFeatures__enable_unmirrored_page_left_nav","TpcFeatures__proxy_prod_host","Cloud__enable_free_trial_server_call","DevPro__enable_vertex_credit_card","DevPro__enable_firebase_workspaces_card","Profiles__enable_recognition_badges","Profiles__enable_release_notes_notifications","DevPro__remove_eu_tax_intake_form","Profiles__enable_developer_profile_pages_as_content","MiscFeatureFlags__developers_footer_image","Search__enable_suggestions_from_borg","MiscFeatureFlags__enable_explain_this_code","BookNav__enable_tenant_cache_key","MiscFeatureFlags__developers_footer_dark_image","Cloud__enable_cloud_shell","Experiments__reqs_query_experiments","Profiles__require_profile_eligibility_for_signin","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__enable_project_variables","DevPro__enable_nvidia_credits_card","Analytics__enable_clearcut_logging","Profiles__enable_developer_profiles_callout","DevPro__enable_google_payments_buyflow","Profiles__enable_dashboard_curated_recommendations","CloudShell__cloud_code_overflow_menu","Search__enable_dynamic_content_confidential_banner","MiscFeatureFlags__enable_view_transitions","Cloud__cache_serialized_dynamic_content","MiscFeatureFlags__enable_variable_operator","Profiles__enable_completecodelab_endpoint","Profiles__enable_awarding_url","Cloud__enable_cloud_dlp_service","Profiles__enable_purchase_prompts","Cloud__enable_legacy_calculator_redirect","Profiles__enable_page_saving","CloudShell__cloud_shell_button","MiscFeatureFlags__gdp_dashboard_reskin_enabled","DevPro__enable_code_assist","Profiles__enable_profile_collections","Search__enable_ai_search_summaries_for_all","DevPro__enable_cloud_innovators_plus","EngEduTelemetry__enable_engedu_telemetry","MiscFeatureFlags__enable_explicit_template_dependencies","Search__enable_ai_eligibility_checks","MiscFeatureFlags__enable_appearance_cookies","Concierge__enable_remove_info_panel_tags","DevPro__enable_google_one_card","Profiles__enable_join_program_group_endpoint","Search__enable_page_map","DevPro__enable_devpro_offers","SignIn__enable_l1_signup_flow","Profiles__enable_user_type","MiscFeatureFlags__enable_framebox_badge_methods","Profiles__enable_completequiz_endpoint","DevPro__enable_developer_subscriptions","Profiles__enable_developer_profile_benefits_ui_redesign","MiscFeatureFlags__emergency_css","Concierge__enable_pushui","Profiles__enable_public_developer_profiles","Profiles__enable_stripe_subscription_management","Concierge__enable_actions_menu"],null,null,"AIzaSyBLEMok-5suZ67qRPzx0qUtbnLmyT_kCVE","https://developerscontentserving-pa.clients6.google.com","AIzaSyCM4QpTRSqP5qI4Dvjt4OAScIN8sOUlO-k","https://developerscontentsearch-pa.clients6.google.com",1,4,null,"https://developerprofiles-pa.clients6.google.com",[17,"codelabs","Google Codelabs","codelabs.developers.google.com",null,"codelabs-dot-devsite-v2-prod.appspot.com",null,null,[null,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],null,null,null,null,[1],null,null,null,null,null,null,[1]],null,[33,null,null,null,null,null,"/images/lockup.svg",null,null,null,null,1,1,null,null,null,null,null,null,null,null,1,null,null,null,null,[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,20,22,23,29,32,36],null,[[],[1,1]],[[null,null,null,null,null,null,null,null,null,null,null,null,1]],null,4],null,"pk_live_5170syrHvgGVmSx9sBrnWtA5luvk9BwnVcvIi7HizpwauFG96WedXsuXh790rtij9AmGllqPtMLfhe2RSwD6Pn38V00uBCydV4m",1,null,"https://developerscontentinsights-pa.clients6.google.com","AIzaSyCg-ZUslalsEbXMfIo9ZP8qufZgo3LSBDU","AIzaSyDxT0vkxnY_KeINtA4LSePJO-4MAZPMRsE","https://developers.clients6.google.com",null,null,"AIzaSyBQom12tzI-rybN7Sf-KfeL4nwm-Rf7PmI\n"]')
+  
+</script>
+
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>

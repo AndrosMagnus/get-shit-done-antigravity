@@ -1,0 +1,19 @@
+{
+  "name": "gsd-antigravity-adk",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "ADK-based runner for GSD workflows inside Antigravity",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@google/adk": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
